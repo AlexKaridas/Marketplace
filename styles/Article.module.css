@@ -1,0 +1,60 @@
+.article {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin: 7vh;
+  position: relative;
+  border-color: rgb(255, 0, 0);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-color: rgb(234, 234, 234);
+  transition: 0.25s ease;
+  text-align: left;
+  border-color: rgb(255, 0, 0);
+}
+
+.image {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  height: auto;
+}
+
+.article :hover {
+  transform: translate(-20px, -20px);
+}
+
+.productName {
+  pointer-events: none;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.prDescription {
+  pointer-events: none;
+  font-size: 12px;
+  font-weight: 300;
+  width: 100%;
+}
+
+.Price {
+  pointer-events: none;
+  font-size: 18px;
+  text-align: right;
+  font-weight: 350;
+  width: 100%;
+}
+
+.productLink {
+  text-decoration: none;
+  color: black;
+}
+
+.image img {
+  height: 30vh;
+}
