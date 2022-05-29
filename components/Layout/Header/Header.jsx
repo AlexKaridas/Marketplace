@@ -8,27 +8,27 @@ const Header = () => {
       </a>
       <nav className={styles.navbar}>
         <ul className={styles.nav_links}>
-          <li className={styles.li}>
+          <li className={styles.header_li}>
             <a href="/About" className={styles.a}>
               About
             </a>
           </li>
-          <li className={styles.li}>
+          <li className={styles.header_li}>
             <a href="/" className={styles.a}>
               Profile
             </a>
           </li>
-          <li className={styles.li}>
+          <li className={styles.header_li}>
             <a href="/Login" className={styles.a}>
               Login
             </a>
           </li>
-          <li className={styles.li}>
+          <li className={styles.header_li}>
             <a href="/" className={styles.a}>
               Shopping cart
             </a>
           </li>
-          <li className={styles.li}>
+          <li className={styles.header_li}>
             <a href="/" className={styles.cart}>
               <i class="bi bi-basket"></i>
             </a>

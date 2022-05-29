@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "./Layout.module.scss";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import Header from "../Layout/Header/Header";
+import Footer from "../Layout/Footer/Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <Head>
         <title>Marketplace</title>
         <meta
-          name="description"
+          name="Marketplace"
           content="Your friendly neighborhoud marketplace"
         />
         <link rel="icon" href="/shopping-cart.jpg" />
@@ -17,10 +17,7 @@ const Layout = ({ children }) => {
 
       <div className={styles.app}>
         <Header />
-
-        <div className={styles.main}>
-          <div>{children}</div>
-        </div>
+        {children}
         <Footer />
       </div>
     </div>
