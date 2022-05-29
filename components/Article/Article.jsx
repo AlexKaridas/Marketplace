@@ -1,6 +1,4 @@
-// import Image from "next/image";
-import styles from "../styles/Article.module.css";
-// import data from "../utils/data";
+import styles from "./Article.module.scss";
 
 const Article = ({ data, product, image, name, description, price }) => {
   const src = image;

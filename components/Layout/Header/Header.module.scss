@@ -1,0 +1,72 @@
+div.header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(20px);
+  background-color: #ffffffb3;
+  padding: 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+
+  div.Titlea {
+    text-decoration: none;
+    color: #212121;
+    font-weight: 300;
+  }
+
+  div.Titlea :hover {
+    font-size: 22px;
+    transition: 0.25s ease;
+  }
+
+  div.title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  div.nav_links {
+    list-style-type: none;
+    padding: 0px;
+  }
+
+  div.nav_links li a::after {
+    position: absolute;
+    content: "";
+    height: 0.1em;
+    top: 100%;
+    background: currentColor;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
+
+  div.nav_links li .a:hover::after {
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transform: scaleX(1);
+  }
+
+  div.nav_links li {
+    display: inline-block;
+    margin-right: 0px;
+    padding: 12px;
+  }
+
+  .nav_links li a {
+    position: relative;
+    font-weight: medium;
+    text-decoration: none;
+    color: #212121;
+    font-size: 16px;
+  }
+
+  div.cart {
+    position: relative;
+  }
+  div.cart:hover {
+    font-size: 20px;
+    transition: 0.25s ease;
+  }
+}
