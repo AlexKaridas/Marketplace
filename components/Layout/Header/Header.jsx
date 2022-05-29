@@ -3,28 +3,28 @@ import styles from "./Header.module.scss";
 const Header = () => {
   return (
     <div className={styles.header}>
-      <a className={styles.Titlea} href="/">
+      <a className={styles.titlea} href="/">
         <h1 className={styles.title}>Marketplace</h1>
       </a>
-      <nav className={styles.navbar}>
+      <div className={styles.navbar}>
         <ul className={styles.nav_links}>
           <li className={styles.header_li}>
-            <a href="/About" className={styles.a}>
+            <a href="/About" className={styles.navbar_ul_links}>
               About
             </a>
           </li>
           <li className={styles.header_li}>
-            <a href="/" className={styles.a}>
+            <a href="/" className={styles.navbar_ul_links}>
               Profile
             </a>
           </li>
           <li className={styles.header_li}>
-            <a href="/Login" className={styles.a}>
+            <a href="/Login" className={styles.navbar_ul_links}>
               Login
             </a>
           </li>
           <li className={styles.header_li}>
-            <a href="/" className={styles.a}>
+            <a href="/" className={styles.navbar_ul_links}>
               Shopping cart
             </a>
           </li>
@@ -34,7 +34,7 @@ const Header = () => {
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
   );
 };

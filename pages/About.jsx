@@ -1,10 +1,8 @@
-import Header from "../components/Header";
-import styles from "../styles/About.module.css";
+import styles from "../components/About/About.module.scss";
 
 export default function About() {
   return (
     <>
-      <Header />
       <section className={styles.aboutArticle}>
         <article className={styles.bigText}>
           <h1>About us</h1>
