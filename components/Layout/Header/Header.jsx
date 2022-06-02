@@ -1,3 +1,4 @@
+import Auth from "../../Utils/Auth";
 import styles from "./Header.module.scss";
 
 const Header = () => {

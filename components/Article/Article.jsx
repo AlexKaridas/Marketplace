@@ -1,10 +1,11 @@
 import styles from "./Article.module.scss";
 import { useEffect, useState } from "react";
 import useProducts from "../../hooks/useProducts";
+import useImages from "../../hooks/useImages";
 
 const Article = () => {
   const [products, setProducts] = useState();
-  const [productImages, setProductImages] = useState("");
+  const [productImages, setProductImages] = useState();
 
   useEffect(() => {
     (async () => {
@@ -12,6 +13,14 @@ const Article = () => {
       setProducts(prods);
     })();
   }, []);
+  useEffect(() => {
+    (async () => {
+      const images = await useImages();
+      setProductImages(images);
+    })();
+  }, []);
+
+  console.log(productImages);
 
   return (
     <a className={styles.productLink} href="/">
