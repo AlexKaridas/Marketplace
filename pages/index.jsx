@@ -1,5 +1,4 @@
 import styles from "../components/Index/Index.module.scss";
-import data from "../utils/data.js";
 import Article from "../components/Article/Article.jsx";
 
 export default function Home() {
@@ -26,14 +25,7 @@ export default function Home() {
         <input type="text" placeholder="Search.."></input>
       </div>
       <section className={styles.Products}>
-        {data.products.map((product) => (
-          <Article
-            key={product.name}
-            image={product.image}
-            description={product.description}
-            price={product.price}
-          ></Article>
-        ))}
+        <Article />
       </section>
     </main>
   );
